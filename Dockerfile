@@ -1,6 +1,6 @@
 FROM archlinux/base
 
-MAINTAINER Martynas Mickevičius <self@2m.lt>
+LABEL maintainer="self@2m.lt"
 
 # Freeze Archlinux mirror to the date that the base image was built on
 RUN echo -n "Server=https://archive.archlinux.org/repos/" > /etc/pacman.d/mirrorlist
