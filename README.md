@@ -6,9 +6,9 @@
 [gitter]:           https://gitter.im/2m/general
 [gitter-badge]:     https://badges.gitter.im/2m/general.svg
 
-This is a Dockerfile that builds on top of the official Arch Linux ([archlinux/base][]) base image and adds features for convenient Arch Linux package building.
+This is a Dockerfile that builds on top of the official Arch Linux ([library/archlinux][]) base image and adds features for convenient Arch Linux package building.
 
-[archlinux/base]: https://hub.docker.com/r/archlinux/base
+[library/archlinux]: https://hub.docker.com/_/archlinux
 
 ## Features
 
