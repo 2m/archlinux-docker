@@ -1,4 +1,4 @@
-FROM archlinux/base
+FROM library/archlinux
 
 LABEL maintainer="self@2m.lt"
 
