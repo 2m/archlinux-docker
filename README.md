@@ -12,7 +12,7 @@ This is a Dockerfile that builds on top of the official Arch Linux ([library/arc
 
 ## Features
 
-* rebuilds the image in [Docker Hub][] whenever the base image is updated
+* rebuilds the image in [Docker Hub][] every month
 * on every image build the `mirrorlist` is switched to the [Arch Linux Archive][] repositories of the date the base image was built
 * contains `yay` to easily build AUR packages
 * contains other tools for general maintenance, like `grep`, `difftools`, etc.
