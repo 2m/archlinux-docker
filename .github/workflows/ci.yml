@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3.1.0
 
       - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3.1.0
+        uses: ibiqlik/action-yamllint@v3.1.1
         with:
           file_or_dir: .github/workflows/ci.yml
 
