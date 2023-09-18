@@ -33,14 +33,14 @@ jobs:
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
       - name: Build and push ref tag
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           push: true
           tags: martynas/archlinux:${{ steps.vars.outputs.sha_short }}
 
       - if: github.ref_name == 'main'
         name: Build and push latest tag
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           push: true
           tags: martynas/archlinux:latest
