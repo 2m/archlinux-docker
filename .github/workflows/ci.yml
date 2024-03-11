@@ -45,4 +45,4 @@ jobs:
           push: true
           tags: martynas/archlinux:latest
 
-      - uses: gautamkrishnar/keepalive-workflow@v1
+      - uses: gautamkrishnar/keepalive-workflow@v2
