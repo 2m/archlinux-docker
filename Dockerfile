@@ -1,4 +1,4 @@
-FROM library/archlinux
+FROM docker.io/archlinux/archlinux:latest
 
 LABEL maintainer="self@2m.lt"
 

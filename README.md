@@ -6,13 +6,13 @@
 [gitter]:           https://gitter.im/2m/general
 [gitter-badge]:     https://badges.gitter.im/2m/general.svg
 
-This is a Dockerfile that builds on top of the official Arch Linux ([library/archlinux][]) base image and adds features for convenient Arch Linux package building.
+This is a Dockerfile that builds on top of the official Arch Linux ([archlinux/archlinux][]) base image and adds features for convenient Arch Linux package building.
 
-[library/archlinux]: https://hub.docker.com/_/archlinux
+[library/archlinux]: https://hub.docker.com/r/archlinux/archlinux
 
 ## Features
 
-* rebuilds the image in [Docker Hub][] every month
+* rebuilds the image in [Docker Hub][] every 4 days
 * on every image build the `mirrorlist` is switched to the [Arch Linux Archive][] repositories of the date the base image was built
 * contains `yay` to easily build AUR packages
 * contains other tools for general maintenance, like `grep`, `difftools`, etc.

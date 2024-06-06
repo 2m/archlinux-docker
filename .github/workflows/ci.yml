@@ -7,7 +7,7 @@ on:  # yamllint disable-line rule:truthy
       - main
   pull_request:
   schedule:
-    - cron: "37 13 */4 * *"
+    - cron: "37 13 */4 * *"  # every 4 days at 13:37
   workflow_dispatch:
 
 jobs:
