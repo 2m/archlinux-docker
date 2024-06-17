@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Validate a Pull Request
     steps:
-      - uses: actions/checkout@v4.1.6
+      - uses: actions/checkout@v4.1.7
 
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3.1.1
