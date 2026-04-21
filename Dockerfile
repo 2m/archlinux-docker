@@ -7,13 +7,10 @@ RUN echo -n "Server=https://archive.archlinux.org/repos/" > /etc/pacman.d/mirror
 RUN tail -1 /var/log/pacman.log | cut -d[ -f2 | cut -d'T' -f1 | sed s'/-/\//g' | tr -d '\n' >> /etc/pacman.d/mirrorlist
 RUN echo '/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
 
-RUN echo "The following mirror archive will be used:"
-RUN cat /etc/pacman.d/mirrorlist
-
-RUN pacman -Syu --needed --noconfirm sudo namcap fakeroot audit grep diffutils
+RUN pacman --verbose -Syu --needed --noconfirm sudo namcap fakeroot audit grep diffutils
 
 # dependencies for yay
-RUN pacman -S --noconfirm git base-devel
+RUN pacman --verbose -S --noconfirm git base-devel
 
 RUN useradd --create-home build
 RUN echo "build ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
